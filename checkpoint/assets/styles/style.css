@@ -1,0 +1,206 @@
+:root{
+    --clr-blk: #1d1d1d;
+    --clr-ppl: #8415b8;
+    --clr-wht: #e7f3ff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--clr-wht);
+}
+/*      generic classes     */
+.t-shadow{
+    text-shadow: 0.1em 0.1em 0.2em #222;
+}
+.expand{
+    transition: transform 0.25s ease-in-out
+}
+
+.expand:hover{
+    transform: scale(1.1);
+}
+
+/*      *** HEADER ***      */
+header{
+    height: 12em;
+    background-image: url(../images/lentes-3d.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0.1em 0.1em 0.2em #222;
+}
+
+/*      *** MAIN ***        */
+main{
+    background-color: var(--clr-blk);
+}
+
+/*      top of the page     */
+nav{
+    height: 3em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img{
+    height: 2em;
+    width: 2em;
+    object-fit: contain;
+    object-position: center;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 0.5em;
+    margin: 0 1em;
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover{
+    background-color: var(--clr-ppl);
+    border-radius: 0.5em;
+}
+
+/*      movies     */
+.gallery{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    align-items: center;
+}
+
+.gallery h2{
+    width: 100%;
+    text-align: center;
+    background-color: var(--clr-ppl);
+    margin-bottom: 1em;
+    color: var(--clr-blk);
+}
+
+.movies{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: var(--clr-ppl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 24em;
+    padding: 0 1em;
+    margin: 1em;
+    border-radius: 0.5em;
+}
+
+.card img{
+    height: 20em;
+    width: 15em;
+    object-fit: cover;
+}
+
+.card button{
+    color: #000
+}
+
+/*      table       */
+table, th, td{
+    border: 1px solid var(--clr-wht);
+}
+
+.ofertas{
+    width: 100%;
+    padding: 5em 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*      footer      */
+footer{
+    background-color: var(--clr-ppl);
+    padding: 1em;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer iframe{
+    height: 4em;
+}
+
+footer input{
+    color:#000;
+}
+
+/*      media querys        */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    footer{
+        height: 13em;
+        flex-flow: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer iframe{
+        width: 80vw;
+    }
+
+    footer form input[type="email"]{
+        width: 40vw;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    nav{
+        transform: scale(0.8);
+    }
+    
+    .movies{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 16em;
+        margin: 1.5em 0;
+    }
+
+    .card img{
+        width: 15em;
+        height: 20em;
+    }
+
+    /*  promos320   */
+    .ofertas{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .ofertas table{
+        margin-bottom: 1em;
+    }
+
+    /*  footer320  */
+    footer{
+        height: 13em;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    footer p{
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Central</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="icon" href="./assets/images/favicon.png">
+</head>
+<body>
+    <!--        *** HEADER ***        -->
+    <header class="t-shadow">
+        <h1>Cinema Central</h1>
+    </header>
+    <!--        *** MAIN ***        -->
+    <main>
+        <!--        top of the page     -->
+        <nav>
+            <img src="./assets/images/logo.png" alt="cinema central logo">
+            <a class="t-shadow expand" href="#">Inicio</a>
+            <a class="t-shadow expand" href="#">Nosotros</a>
+            <a class="t-shadow expand" href="#">Combos</a>
+        </nav>
+        <!--        movies         -->
+        <section class="gallery">
+            <h2>Proximos Estrenos</h2>
+            <div class="movies">
+                <div class="card t-shadow expand">
+                    <h3>El gato con botas</h3>
+                    <img src="./assets/images/gato-con-botas.jpg" alt="el gato con botas portada">
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card t-shadow expand">
+                    <h3>Super mario bros</h3>
+                    <img src="./assets/images/mario.jpg" alt="super mario bros portada">
+                    <button>Comprar</button>
+                </div>
+
+                <div class="card t-shadow expand">
+                    <h3>Sonic 2</h3>
+                    <img src="./assets/images/sonic.jpg" alt="sonic 2 portada">
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+        <div class="ofertas">
+            <!--        table       -->
+            <table>
+                <caption style="text-align: left;">Combos</caption>
+                <tr>
+                    <th>Combo</th>
+                    <th>Incluye</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Pochoclos y chocolate</td>
+                    <td>$5099</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nachos con cheddar</td>
+                    <td>$2500</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mate con chipa</td>
+                    <td>$3500</td>
+                </tr>
+            </table>
+            <!--        o-list      -->
+            <section>
+                <h4>Promociones</h4>
+                <ol type="1">
+                    <li>Tarjeta visa - 12 cuotas sin interes</li>
+                    <li>Tarjetas debito - 10% de descuento</li>
+                    <li>Tarjeta Naranja - 3cuotas sin interes</li>
+                    <li>Efectivo - 10% de descuento</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+    <!--        *** FOOTER ***        -->
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105125.52371040115!2d-58.54498138243361!3d-34.574498600766724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7d733269ca5%3A0x382f83fa2ef5001a!2sCinema%20Devoto!5e0!3m2!1ses-419!2sar!4v1684764798116!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Juan Santiago - Nicotra - Cohort FS048 MERN</p>
+        <form method="get" action="./assets/pages/show_data.html">
+            <fieldset>
+                <legend>Para novedades dejanos tu email:</legend>
+                <label for="u-email">Email 
+                    <input type="email" name="email" id="u-email">
+                </label>
+                <input type="submit" name="suscripto" value="Enviar">
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
